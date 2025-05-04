@@ -6,14 +6,14 @@ import { useFonts } from 'expo-font';
 
 export default function SplashScreen() {
   const [fontsLoaded] = useFonts({
-    'Heavitas': require('../../assets/fonts/Heavitas.ttf'),
+    'Heavitas': require('../assets/fonts/Heavitas.ttf'),
   });
 
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
       <ImageBackground
-        source={require('../../assets/images/quran-bg.png')}
+        source={require('../assets/images/quran-bg.png')}
         style={styles.backgroundImage}
         resizeMode="cover"
       >
@@ -56,14 +56,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     color: 'white',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Heavitas',
     textAlign: 'center',
     marginBottom: 10,
   },
   subtitle: {
     fontSize: 36,
     color: 'white',
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Heavitas',
     textAlign: 'center',
     marginBottom: 40,
   },
@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#333',
     fontSize: 16,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Heavitas',
   },
 }); 
